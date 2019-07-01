@@ -4,11 +4,11 @@ Setup file created
 """
 from setuptools import setup
 
-setup(name='ictp-quantum',
+setup(name='ictpq',
       version='0.1',
       description='Open-Source Quantum Physics at the ICTP',
-      url='https://github.com/nathanshammah/ictp-quantum',
+      url='https://github.com/nathanshammah/ictpq',
       author='Nathan Shammah',
       license='BSD 3 New',
-      packages = ['ictp-quantum']
+      packages = ['ictpq']
      )

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def purity(rho):
 	"""
-	Calculate the purity of a quantum state (normalized in the process). 
+	Calculate the purity of a quantum state. 
 
 	Parameters
 	----------
@@ -17,5 +17,8 @@ def purity(rho):
 	purity_rho : float
 		Purity of the quantum system, p (p=1 if pure, 1/N<=p<1 if mixed).
 	"""
-	purity_rho = ((rho*rho).unit()).tr()
+	if rho.type=="ket":
+		rho=rho*rho.dag()
+
+	purity_rho = (rho*rho).tr()
 	return purity_rho
