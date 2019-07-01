@@ -2,7 +2,7 @@ import numpy as np
 import scipy as sc
 import qutip as qt
 from numpy.testing import assert_, assert_equal, assert_almost_equal
-from ictpq import purity
+from ictpq.ictpq import *
 
 def test_purity():
 	"""
